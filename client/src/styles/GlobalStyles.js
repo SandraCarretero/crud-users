@@ -13,6 +13,8 @@ const GlobalStyles = createGlobalStyle`
   body{
     margin: 0;
     font-family: sans-serif;
+    background-color: #EBEBEB;
+    font-family: "Roboto", sans-serif;
   }
   a{
     text-decoration: none;

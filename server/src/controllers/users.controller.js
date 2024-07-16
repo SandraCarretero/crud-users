@@ -11,13 +11,14 @@ usersController.getAllUsers = async (req, res) => {
     const jsonData = await JSON.parse(data);
     res.send(jsonData);
   } catch (err) {
-    console.log(err);
+    console.error(err);
   }
   res.end();
 };
 
 usersController.postNewUser = async (req, res) => {
   const newUser = { userId: v4(), ...req.body };
+  console.log(req.body);
   try {
     const data = await fsPromises.readFile(filePath);
     const jsonData = await JSON.parse(data);
@@ -25,7 +26,7 @@ usersController.postNewUser = async (req, res) => {
     fsPromises.writeFile(filePath, JSON.stringify(jsonData));
     res.send(jsonData);
   } catch (err) {
-    console.log(err);
+    console.error(err);
   }
   res.end();
 };
@@ -40,17 +41,14 @@ usersController.patchUsers = async (req, res) => {
       if (user.userId === id) {
         return { ...user, ...req.body };
       }
-
       return user;
     });
 
     fsPromises.writeFile(filePath, JSON.stringify(updateUsers));
     res.send(updateUsers);
   } catch (err) {
-    console.log(err);
+    console.error(err);
   }
-
-  res.end();
 };
 
 usersController.deleteUsers = async (req, res) => {
@@ -63,9 +61,8 @@ usersController.deleteUsers = async (req, res) => {
     fsPromises.writeFile(filePath, JSON.stringify(updateUsers));
     res.send(updateUsers);
   } catch (err) {
-    console.log(err);
+    console.error(err);
   }
-  res.end();
 };
 
 module.exports = usersController;
