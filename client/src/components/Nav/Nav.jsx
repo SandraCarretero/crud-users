@@ -13,7 +13,7 @@ const Nav = ({ newUserMenu, setNewUserMenu }) => {
 				<StyledSearch type='text' placeholder='Search User...' />
 			</StyledSearchContainer>
 			<StyledButton onClick={() => setNewUserMenu(!newUserMenu)}>
-				+ NEW USER
+				NEW USER
 			</StyledButton>
 		</StyledNav>
 	);

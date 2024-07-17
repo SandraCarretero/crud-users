@@ -18,25 +18,25 @@ const StyledSearchContainer = styled.div`
 
 const StyledSearch = styled.input`
 	width: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	border: none;
 
 	&::placeholder {
 		color: #d8d8d8;
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Poppins', sans-serif;
 		letter-spacing: 0.5px;
 	}
 `;
 
 const StyledButton = styled.button`
 	border: none;
-	border-radius: 4px;
+	border-radius: 15px;
 	color: white;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
-	background-color: #559ff5;
+	background-color: #849fff;
 	width: 100px;
-	height: 30px;
+	height: 50px;
 	cursor: pointer;
 `;
 

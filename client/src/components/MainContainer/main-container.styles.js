@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const SytledMainContainer = styled.main`
-	max-width: 800px;
+	max-width: 90%;
 	margin: auto;
 	margin-top: 40px;
 	display: flex;

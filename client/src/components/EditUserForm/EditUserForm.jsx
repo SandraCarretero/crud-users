@@ -3,7 +3,8 @@ import { patchData } from '../../utils/api';
 import {
 	StyledForm,
 	StyledFormInput,
-	StyledFormSubmit
+	StyledFormSubmit,
+	StyledInputRadio
 } from './edit-user-form.styles';
 
 const EditUserForm = ({
@@ -13,7 +14,6 @@ const EditUserForm = ({
 	setEditUserMenu,
 	editUser
 }) => {
-	// Si newUser aún no tiene género, se inicializa con el género del usuario editado
 	if (!newUser.gender) {
 		setNewUser({ ...newUser, gender: editUser.gender });
 	}
@@ -41,14 +41,14 @@ const EditUserForm = ({
 				defaultValue={editUser.nick}
 			/>
 			<div>
-				<input
+				<StyledInputRadio
 					onChange={() => setNewUser({ ...newUser, gender: 'men' })}
 					type='radio'
 					name='gender'
 					checked={newUser.gender === 'men'}
 				/>
 				<label>Man</label>
-				<input
+				<StyledInputRadio
 					onChange={() => setNewUser({ ...newUser, gender: 'women' })}
 					type='radio'
 					name='gender'

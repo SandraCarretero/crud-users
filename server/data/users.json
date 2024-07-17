@@ -3,48 +3,56 @@
     "userId": "356236ef-a50c-4bc7-9fa6-66450119634f",
     "name": "Carlos Rocas",
     "nick": "karlitos77",
-    "gender": "men"
+    "gender": "men",
+    "characteristics": ["Music", "Video Games"]
   },
   {
     "userId": "9a8ab47a-127f-4582-9028-610d107332ca",
     "name": "Antonio Resines",
     "nick": "tonires77",
-    "gender": "men"
+    "gender": "men",
+    "characteristics": ["Sports", "Dance", "Games"]
   },
   {
     "userId": "3a7ac117-aa9b-4b1f-9464-cb30802b3ba8",
     "name": "Carla Méndez",
     "nick": "carlitaaa00",
-    "gender": "women"
+    "gender": "women",
+    "characteristics": ["Cooking", "Reading", "Gardening"]
   },
   {
     "userId": "72abc449-1cf5-4445-b23b-684dba294169",
     "name": "Horacio Mentiras",
     "nick": "horment",
-    "gender": "men"
+    "gender": "men",
+    "characteristics": ["Music", "Photography", "Traveling"]
   },
   {
     "userId": "807f703c-736b-4706-a152-ec1c2eeb36c1",
     "name": "Maria Copas",
     "nick": "copitasMaRY",
-    "gender": "women"
+    "gender": "women",
+    "characteristics": ["Traveling", "Fashion"]
   },
   {
     "userId": "4c5ac230-9b73-46f8-93a2-c018b1f8194f",
     "name": "Antolín Pulido",
     "nick": "anto33",
-    "gender": "men"
+    "gender": "men",
+    "characteristics": ["Fishing", "Hiking", "Camping"]
   },
   {
     "userId": "7095da5e-7288-42dd-bee2-4dc4adaa1ad6",
     "name": "Sergio Trascasas",
     "nick": "traskiserge00",
-    "gender": "men"
+    "gender": "men",
+    "characteristics": ["Gaming", "Cooking"]
   },
   {
     "userId": "02b1a672-0511-4c01-80df-82f51cdb2fea",
     "name": "Francisca Pérez",
     "nick": "patxica98",
-    "gender": "women"
+    "gender": "women",
+    "characteristics": ["Music", "Traveling", "Yoga"]
   }
 ]

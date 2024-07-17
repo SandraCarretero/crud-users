@@ -3,7 +3,10 @@ import { URLS } from '../../constants/urls';
 import { deleteData, getData } from '../../utils/api';
 import {
 	StyledActionContainer,
+	StyledCharacteristics,
+	StyledCharacteristicsContainer,
 	StyledIcon,
+	StyledRow,
 	StyledUser,
 	StyledUserImg,
 	StyledUserList,
@@ -27,17 +30,26 @@ const UsersList = ({
 		<StyledUserList>
 			{users.map((user, i) => (
 				<StyledUser key={user.userId}>
-					<StyledUserImg>
-						<img
-							src={`https://randomuser.me/api/portraits/${user.gender}/${i % 100}.jpg`}
-							alt={user.name}
-						/>
-					</StyledUserImg>
+					<StyledRow>
+						<StyledUserImg>
+							<img
+								src={`https://randomuser.me/api/portraits/${user.gender}/${i % 100}.jpg`}
+								alt={user.name}
+							/>
+						</StyledUserImg>
 
-					<StyledUserNameContainer>
-						<StyledUserName>{user.name}</StyledUserName>
-						<StyledUserNick>@{user.nick}</StyledUserNick>
-					</StyledUserNameContainer>
+						<StyledUserNameContainer>
+							<StyledUserName>{user.name}</StyledUserName>
+							<StyledUserNick>@{user.nick}</StyledUserNick>
+							<StyledCharacteristicsContainer>
+								{user.characteristics.map((characteristic, index) => (
+									<StyledCharacteristics key={index}>
+										{characteristic}
+									</StyledCharacteristics>
+								))}
+							</StyledCharacteristicsContainer>
+						</StyledUserNameContainer>
+					</StyledRow>
 					<StyledActionContainer>
 						<StyledIcon
 							onClick={() => deleteUser(setUsers, user.userId)}

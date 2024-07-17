@@ -22,7 +22,7 @@ const StyledFormInput = styled.input`
 	padding-left: 16px;
 	border: 1px solid #d8d8d8;
 	border-radius: 4px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 0.5px;
@@ -32,6 +32,10 @@ const StyledFormInput = styled.input`
 	}
 `;
 
+const StyledInputRadio = styled.input`
+	cursor: pointer;
+`;
+
 const StyledFormSubmit = styled.input`
 	height: 40px;
 	border: none;
@@ -39,10 +43,34 @@ const StyledFormSubmit = styled.input`
 	cursor: pointer;
 	font-size: 20px;
 	font-weight: 600;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	letter-spacing: 1px;
 	color: white;
 	background-color: #559ff5;
 `;
 
-export { StyledForm, StyledFormInput, StyledFormSubmit };
+const StyledCharacteristicsContainer = styled.div`
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+`;
+
+const StyledCharacteristicButton = styled.button`
+	border: 1px solid #849fff;
+	color: ${({ isSelected }) => (isSelected ? 'white' : '#849fff')};
+	background-color: ${({ isSelected }) => (isSelected ? '#849fff' : 'white')};
+	border-radius: 10px;
+	padding: 2px 5px;
+	font-size: 12px;
+	cursor: pointer;
+`;
+
+export {
+	StyledForm,
+	StyledFormInput,
+	StyledInputRadio,
+	StyledFormSubmit,
+	StyledCharacteristicsContainer,
+	StyledCharacteristicButton
+};
