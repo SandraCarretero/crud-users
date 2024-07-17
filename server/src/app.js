@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const usersRoutes = require('./routes/users.routes');
-const characteristicsRoutes = require('./routes/characteristics.routes');
 
 // Rutas
 
@@ -17,7 +16,6 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use('/api/users', usersRoutes);
-app.use('/api/characteristics', characteristicsRoutes);
 
 // Uso de rutas
 

@@ -56,6 +56,14 @@ const StyledCharacteristicsContainer = styled.div`
 	gap: 6px;
 `;
 
+const StyledCharacteristics = styled.div`
+	border: 1px solid #849fff;
+	color: #849fff;
+	border-radius: 10px;
+	padding: 2px 5px;
+	font-size: 12px;
+`;
+
 const StyledCharacteristicButton = styled.button`
 	border: 1px solid #849fff;
 	color: ${({ isSelected }) => (isSelected ? 'white' : '#849fff')};
@@ -72,5 +80,6 @@ export {
 	StyledInputRadio,
 	StyledFormSubmit,
 	StyledCharacteristicsContainer,
+	StyledCharacteristics,
 	StyledCharacteristicButton
 };

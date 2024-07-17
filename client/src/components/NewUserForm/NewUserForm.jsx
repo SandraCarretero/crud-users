@@ -1,8 +1,6 @@
 import { URLS } from '../../constants/urls';
 import { postData } from '../../utils/api';
 import {
-	StyledCharacteristicButton,
-	StyledCharacteristicsContainer,
 	StyledForm,
 	StyledFormInput,
 	StyledFormSubmit,
@@ -38,18 +36,6 @@ const NewUserForm = ({ setUsers, newUser, setNewUser, setNewUserMenu }) => {
 				/>
 				<label>Woman</label>
 			</div>
-			<StyledCharacteristicsContainer>
-        {characteristics.map(characteristic => (
-          <StyledCharacteristicButton
-            key={characteristic}
-            isSelected={selectedCharacteristics.includes(characteristic)}
-            onClick={() => handleCharacteristicChange(characteristic)}
-            type="button"
-          >
-            {characteristic}
-          </StyledCharacteristicButton>
-        ))}
-      </StyledCharacteristicsContainer>
 
 			<StyledFormSubmit type='submit' value='CREATE USER' />
 		</StyledForm>
@@ -66,7 +52,5 @@ const handleSubmit = async (event, setUsers, newUser, setNewUserMenu) => {
 	}
 	setNewUserMenu(false);
 };
-
-
 
 export default NewUserForm;
