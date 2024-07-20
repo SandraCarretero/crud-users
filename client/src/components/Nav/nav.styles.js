@@ -14,6 +14,10 @@ const StyledSearchContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
 	padding-left: 4px;
+	transition: all 0.4s;
+	&:focus-within {
+		outline: 1px solid #d3dbee;
+	}
 `;
 
 const StyledSearch = styled.input`
@@ -25,6 +29,9 @@ const StyledSearch = styled.input`
 		color: #d8d8d8;
 		font-family: 'Poppins', sans-serif;
 		letter-spacing: 0.5px;
+	}
+	&:focus {
+		outline: none;
 	}
 `;
 

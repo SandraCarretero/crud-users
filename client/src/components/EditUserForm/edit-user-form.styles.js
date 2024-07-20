@@ -8,7 +8,7 @@ const StyledForm = styled.form`
 	width: 400px;
 	height: 400px;
 	background-color: white;
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	translate: -50% -50%;

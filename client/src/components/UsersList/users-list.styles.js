@@ -66,20 +66,6 @@ const StyledUserNick = styled.p`
 	margin: 0;
 `;
 
-const StyledCharacteristicsContainer = styled.div`
-	margin-top: 10px;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 6px;
-`;
-const StyledCharacteristics = styled.div`
-	border: 1px solid #849fff;
-	color: #849fff;
-	border-radius: 10px;
-	padding: 2px 5px;
-	font-size: 12px;
-`;
-
 const StyledActionContainer = styled.div`
 	width: 102px;
 	display: flex;
@@ -100,8 +86,6 @@ export {
 	StyledUserName,
 	StyledUserNick,
 	StyledUserImg,
-	StyledCharacteristicsContainer,
-	StyledCharacteristics,
 	StyledActionContainer,
 	StyledIcon
 };

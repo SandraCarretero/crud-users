@@ -3,8 +3,6 @@ import { URLS } from '../../constants/urls';
 import { deleteData, getData } from '../../utils/api';
 import {
 	StyledActionContainer,
-	StyledCharacteristics,
-	StyledCharacteristicsContainer,
 	StyledIcon,
 	StyledRow,
 	StyledUser,
@@ -41,13 +39,6 @@ const UsersList = ({
 						<StyledUserNameContainer>
 							<StyledUserName>{user.name}</StyledUserName>
 							<StyledUserNick>@{user.nick}</StyledUserNick>
-							<StyledCharacteristicsContainer>
-								{user.characteristics.map((characteristic, index) => (
-									<StyledCharacteristics key={index}>
-										{characteristic}
-									</StyledCharacteristics>
-								))}
-							</StyledCharacteristicsContainer>
 						</StyledUserNameContainer>
 					</StyledRow>
 					<StyledActionContainer>
